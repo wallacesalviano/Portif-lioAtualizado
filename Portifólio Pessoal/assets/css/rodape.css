@@ -1,0 +1,25 @@
+.rodapé-container {
+    background: var(--azul-fechado);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
+.rodapé-icones{
+    margin: 1rem;
+}
+
+.rodapé-container a {
+    font-size: 2rem;
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.rodapé-container p {
+    margin-top: 0.5rem;
+}
