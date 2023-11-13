@@ -45,3 +45,19 @@
     max-width: 80vh;
 }
 
+@media screen and (max-width: 730px) {
+    .titulo-menor h2 {
+        width: 30vh;
+    }
+
+    
+    .section2-container {
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+    
+    .section2-img img{
+        max-width: 50vh;
+    }
+}

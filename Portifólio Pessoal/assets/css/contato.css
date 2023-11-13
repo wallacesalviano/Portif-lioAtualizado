@@ -75,6 +75,7 @@
     background: var(--azul-fechado);
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .section5-input button:hover{
@@ -98,3 +99,28 @@
     color: var(--branco);
 }
 
+@media screen and (max-width: 730px) {
+    .section5 {
+        padding: 2rem;
+    }
+    
+    .section5-container {
+        flex-direction: column;
+    }
+    
+    .section5-input {
+        width: 50vh;
+    }
+
+    .section5-input input {
+        width: 50vh;
+    }
+
+    .section5-input textarea {
+        width: 50vh;
+    }
+    
+    .section5-sessao {
+        width: 50vh;
+    }
+}

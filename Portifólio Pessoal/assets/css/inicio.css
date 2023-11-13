@@ -64,5 +64,13 @@
     .section1{
         flex-direction: column;
     }
+
+    .section1-imagem img {
+        max-width: 35rem;
+    }
+
+    .section1-textos h1 {
+        font-size: 2.8rem;
+    }
 }
 

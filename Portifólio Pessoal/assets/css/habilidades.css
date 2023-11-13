@@ -50,3 +50,13 @@
     font-size: 1.2rem;
     margin: 0.75rem;
 }
+
+@media screen and (max-width: 730px) {
+    .section3-titulo-menor h2 {
+        width: 32vh;
+    }
+
+    .section3-container ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
