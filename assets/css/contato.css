@@ -1,0 +1,126 @@
+.section5 {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 5rem;
+}
+
+.section5-titulo-menor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.section5-titulo-menor h2 {
+    margin: 0.5rem;
+    text-align: center;
+    border-bottom: 4px solid var(--cinza);
+    width: 20vh;
+    border-radius: 3rem;
+}
+
+.section5-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #f1f1f1;
+    margin: 2em 5rem 2rem 5rem;
+    border-radius: 2rem;
+}
+
+.section5-input {
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 100vh;
+}
+
+.section5-input-interno{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0 ;
+
+}
+
+.section5-informações img {
+    max-width: 6vh;
+    margin: 0.5rem;
+}
+
+.section5-input input {
+    width: 60vh;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.section5-input textarea {
+    width: 60vh;
+    resize: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+.section5-input button{
+    width: 30vh;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: var(--branco);
+    background: var(--azul-fechado);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section5-input button:hover{
+    background: var(--azul-claro);
+}
+
+.section5-sessao{
+    border: 1px solid #f1f1f1;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.section5-sessao:hover{
+    background: var(--azul-fechado);
+}
+
+.section5-sessao a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 730px) {
+    .section5 {
+        padding: 2rem;
+    }
+    
+    .section5-container {
+        flex-direction: column;
+    }
+    
+    .section5-input {
+        width: 50vh;
+    }
+
+    .section5-input input {
+        width: 50vh;
+    }
+
+    .section5-input textarea {
+        width: 50vh;
+    }
+    
+    .section5-sessao {
+        width: 50vh;
+    }
+}

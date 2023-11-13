@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/icone página.png">
+    <title>Portifólio Pessoal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    < Wallace />
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+            <div class="nav-icones">
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #fcfcfc;"></i></a>
+                <a href="#"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+<!-- 
+    <main>
+        <button id="inicio" class="scroll-top">
+            <img src="assets/img/setas-para-cima.png" alt="seta ue direciona para baixo">
+        </button>
+    </main> -->
+
+    <section class="section1" id="inicio">
+        <div class="section1-container">
+            <div class="section1-textos">
+                <p>
+                    Olá Dev's! Me chamo
+                    <b>Wallace Salviano</b>
+                    e eu sou
+                </p>
+                <h1>Desenvolvedor Front-End</h1>
+            </div>
+        </div>
+        <div class="section1-imagem">
+            <img data-aos="fade-left" data-aos-duration="1500" src="assets/img/undraw_add_information_j2wg.svg"
+                alt="foto principal com o boneco apontando para cima">
+        </div>
+        <!-- <div class="section1-setas">
+            <a href="#">
+                <img src="assets/img/seta-dupla.png" alt="">
+            </a>
+        </div> -->
+    </section>
+
+    <section class="section2" id="sobre-mim">
+        <div class="titulo-menor">
+            <h2>Sobre Mim</h2>
+        </div>
+
+        <div class="section2-container" data-aos="flip-up" data-aos-duration="1500">
+
+            <div class="section2-img">
+                <img src="assets/img/foto wallace.png" alt="">
+            </div>
+
+            <ul>
+                <li>Olá! Meu nome é Wallace;</li>
+                <li>Tenho 25 anos - Natural de Goiânia/GO;</li>
+                <li>Estou cursando Desenvolvimento Front-End na Alura desde julho de 2023;</li>
+                <li>
+                    Estou me graduando em Análise e Desenvolvimento de Sistema na faculdade Anhanguera desde Agosto
+                    de 2023;
+                </li>
+                <li>Concluí o Ensino Médio em 2016;</li>
+                <li>Atualmente moro em Brasília/DF;</li>
+                <li>
+                    Minhas soft skills (comunicação, resolução de problemas, criatividade, empatia, colaboração,
+                    flexibilidade) complementam minha experiência, tornando-me eficaz no trabalho como programador
+                    web;
+                </li>
+                <li>Estou em busca da minha primeira oportunidade como Desenvolvedor Jr.;</li>
+                <li>Veja abaixo minhas habilidades e alguns projetos que realizei para colocar em prática meus
+                    conhecimentos!</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section class="section3" id="habilidades">
+        <div class="section3-titulo-menor">
+            <h2>Habilidades</h2>
+        </div>
+
+        <div class="section3-container" data-aos="flip-up" data-aos-duration="1500">
+            <ul class="section3-lista">
+                <li class="section3-itens">
+                    <img src="assets/img/LOGO-HTML.png" alt="">
+                    <span>HTML5</span>
+                    <p>Avançado</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/LOGO-CSS.png" alt="">
+                    <span>CSS3</span>
+                    <p>Avançado</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/SASS LOGO.png" alt="">
+                    <span>SASS</span>
+                    <p>Intermediário</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/TAILWIND LOGO.png" alt="">
+                    <span>TailWind</span>
+                    <p>Intermediário</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/JavaScript-logo.png" alt="">
+                    <span>JavaScript</span>
+                    <p>Intermediário</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/TYPESCRIPT PNG.png" alt="">
+                    <span>TypeScript</span>
+                    <p>Básico</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/PYTHON LOGO.png" alt="">
+                    <span>Python</span>
+                    <p>Intermediário</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/vue.png" alt="">
+                    <span>VueJS</span>
+                    <p>Básico</p>
+                </li>
+                <li class="section3-itens">
+                    <img src="assets/img/GIT LOGO.png" alt="">
+                    <span>Git</span>
+                    <p>Intermediário</p>
+                </li class="section3-itens">
+                <li class="section3-itens">
+                    <img src="assets/img/GITHUB LOGO.png" alt="">
+                    <span>GitHub</span>
+                    <p class="section3-nivel">Avançado</p>
+                </li class="section3-itens">
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="section4" id="projetos">
+        <div class="section4-titulo-menor">
+            <h2>Projetos</h2>
+        </div>
+
+        <div class="section4-container">
+            <div class="section4-container-interno" data-aos="flip-up" data-aos-duration="1500">
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/projeto numero secreto.png"
+                        alt="imagem do jogo número">
+                    <h3 class="section4-titulo-interno"><span>Jogo número secreto</span>
+                    </h3>
+
+                    <a href="https://github.com/wallacesalviano/JogoNumeroSecreto"> <i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://jogo-numero-secreto-five.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+                </div>
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/projeto alurabooks.png" alt="imagem do alura books">
+                    <h3 class="section4-titulo-interno"><span>Alura Books</span>
+                    </h3>
+
+                    <a href="https://github.com/wallacesalviano/alurabooks"> <i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://alurabooks-ashen-tau.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+
+                </div>
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/projeto relógio digital.png"
+                        alt="imagem do relógio digital">
+                    <h3 class="section4-titulo-interno"><span>Relógio Digital</span>
+                    </h3>
+
+                    <a href="https://relogio-digital-gilt-eight.vercel.app/"><i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://aluraplus-azure-phi.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+                </div>
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/aluraplus.png" alt="imagem do alura plus">
+                    <h3 class="section4-titulo-interno"><span>Alura Plus</span>
+                    </h3>
+
+                    <a href="https://github.com/wallacesalviano/aluraplus"><i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://aluraplus-ijkgcarms-wallacesalviano.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+                </div>
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/Norte Sul MND.png" alt="imagem do alura plus">
+                    <h3 class="section4-titulo-interno"><span>Norte Sul</span>
+                    </h3>
+
+                    <a href="https://github.com/wallacesalviano/NorteSul"><i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://norte-sul.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+                </div>
+
+                <div class="section4-quadrantes">
+                    <img class="section4-imagem" src="assets/img/FOKUS.png" alt="imagem do alura plus">
+                    <h3 class="section4-titulo-interno"><span>Fokus</span>
+                    </h3>
+
+                    <a href="https://github.com/wallacesalviano/Fokus"><i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i>Code</a>
+
+                    <a href="https://fokus-five-theta.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i>Deploy</a>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="section5" id="contato">
+        <div class="section5-titulo-menor">
+            <h2>Contato</h2>
+        </div>
+
+        <div class="section5-container" data-aos="flip-up" data-aos-duration="1500">
+            <form action="" class="section5-input">
+                <div class="section5-input-interno">
+                    <label for="">Nome: </label>
+                    <input name="name" type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="section5-input-interno">
+                    <label for="">E-mail: </label>
+                    <input name="name" type="text" id="nome" placeholder="Digite seu e-mail">
+                </div>
+                <div class="section5-input-interno">
+                    <label for="">Mensagem: </label>
+                    <textarea name="name" id="nome" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+
+            <div class="section5-informações">
+                <div class="section5-sessao">
+                    <a href="https://www.linkedin.com/in/wallace-salviano-637189261/">
+                        <img src="assets/img/linkedin-branoc.png" alt="">
+                        <h3>Linkedin</h3>
+                        <p>wallace-salviano</p>
+                    </a>
+                </div>
+
+                <div class="section5-sessao">
+                    <a href="https://github.com/wallacesalviano">
+                        <img src="assets/img/git-branco.png" alt="">
+                        <h3>GitHub</h3>
+                        <p>wallacesalviano</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodapé">
+        <div class="rodapé-container">
+            <a href="/index.html">
+                < Wallace />
+            </a>
+            <p>Me acompanhe nas redes</p>
+            <div class="rodapé-icones">
+                <a href="https://github.com/wallacesalviano">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/wallace-salviano-637189261/">
+                    <i class="fa-brands fa-linkedin" style="color: #fcfcfc;"></i>
+                </a>
+                <a href="http://www.instagram.com/wallacesalvianoo/">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+
+                <p>© 2023 Wallace - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
