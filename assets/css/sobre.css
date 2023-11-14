@@ -58,6 +58,21 @@
     }
     
     .section2-img img{
-        max-width: 50vh;
+        max-width: 45vh;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .titulo-menor h2 {
+        width: 20vh;
+    }
+    
+    .section2-img img{
+        width: 23vh;
+    }
+
+    .section2{
+        padding: 2rem;
     }
 }

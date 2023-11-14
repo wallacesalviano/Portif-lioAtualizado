@@ -59,4 +59,41 @@
     .section3-container ul {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .section3-itens img{
+        max-width: 8vh;
+        gap: 1rem;
+    }
+
+    .section3{
+        padding: 2rem;
+    }
+
+    .section3-container ul{
+        padding: 2rem;
+        margin: 1rem;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .section3-titulo-menor h2 {
+        width: 30vh;
+    }
+
+    .section3{
+        padding: 1rem;
+    }
+
+    .section3-itens img{
+        max-width: 5vh;
+        gap: 0.5rem;
+    }
+
+    .section3-container ul{
+        padding: 1rem;
+        margin: 1rem;
+        gap: 1.5rem;
+    }
+
 }

@@ -108,19 +108,30 @@
         flex-direction: column;
     }
     
-    .section5-input {
-        width: 50vh;
-    }
-
-    .section5-input input {
-        width: 50vh;
-    }
-
-    .section5-input textarea {
-        width: 50vh;
-    }
-    
+    .section5-input, 
+    .section5-input input,
+    .section5-input textarea,
     .section5-sessao {
         width: 50vh;
     }
+}
+
+@media screen and (max-width: 430px){
+    .section5{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .section5-input, 
+    .section5-input input,
+    .section5-input textarea,
+    .section5-sessao,
+    .section5-input button {
+        width: 30vh;
+    }
+
+    .section5-container {
+        margin: 1rem;
+    }
+
 }
