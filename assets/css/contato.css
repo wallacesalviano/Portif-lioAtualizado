@@ -2,6 +2,7 @@
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 5rem;
+    width: 100%;
 }
 
 .section5-titulo-menor{
@@ -9,22 +10,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 25px;
+    margin-bottom: 2rem;
 }
 
-.section5-titulo-menor h2 {
-    margin: 0.5rem;
-    text-align: center;
-    border-bottom: 4px solid var(--cinza);
-    width: 20vh;
-    border-radius: 3rem;
-}
 
 .section5-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid #f1f1f1;
     margin: 2em 5rem 2rem 5rem;
     border-radius: 2rem;
@@ -33,32 +28,32 @@
 .section5-input {
     border-radius: 2rem;
     margin: 2rem;
-    width: 100vh;
+    width: 40vw;
 }
 
 .section5-input-interno{
-    width: 50vh;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0.5rem 0 ;
-
 }
 
 .section5-informações img {
-    max-width: 6vh;
+    max-width: 4vw;
     margin: 0.5rem;
 }
 
 .section5-input input {
-    width: 60vh;
+    width: 35vw;
     border-radius: 0.2rem;
     border: none;
     padding: 0.5rem;
 }
 
+
 .section5-input textarea {
-    width: 60vh;
+    width: 35vw;
     resize: none;
     border-radius: 0.2rem;
     padding: 0.5rem;
@@ -66,7 +61,7 @@
 }
 
 .section5-input button{
-    width: 30vh;
+    width: 15vw;
     border-radius: 0.2rem;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -84,10 +79,11 @@
 
 .section5-sessao{
     border: 1px solid #f1f1f1;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 2em;
+    padding: 0.5rem;
+    width: 12vw;
     border-radius: 1rem;
-    text-align: center;
+    text-align: center; 
 }
 
 .section5-sessao:hover{
@@ -107,6 +103,9 @@
     .section5-container {
         flex-direction: column;
     }
+    .section5-container {
+        max-width: 100%;
+    }
     
     .section5-input, 
     .section5-input input,
@@ -119,7 +118,7 @@
 @media screen and (max-width: 430px){
     .section5{
         padding: 1rem;
-        width: 100%;
+        max-width: 100%;
     }
 
     .section5-input, 
@@ -132,6 +131,10 @@
 
     .section5-container {
         margin: 1rem;
+    }
+
+    .section5-container {
+        max-width: 100%;
     }
 
 }

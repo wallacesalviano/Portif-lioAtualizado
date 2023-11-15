@@ -26,6 +26,11 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    transition: 2s;
+    
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
