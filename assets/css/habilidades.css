@@ -1,43 +1,32 @@
-.section3{
+.section3 {
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 5rem;
-    width: 100vw;
 }
 
-.section3-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section3-titulo-menor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section3-titulo-menor {
     text-align: center;
     font-size: 25px;
     margin-bottom: 2rem;
 }
 
-.section3-container ul{
+.section3-container ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
-    padding: 5rem;
-    width: 80vw;
+    padding: 3rem;
 }
 
-.section3-itens img{
-    width: 80px;
+.section3-itens img {
+    width: 30%;
 }
 
-.section3-lista{
+.section3-lista {
     margin: 2rem;
     gap: 3rem;
     border: 1px solid var(--cinza);
     border-radius: 2rem;
-    padding: 0.75rem;   
+    padding: 0.75rem;
     box-shadow: 0px 2px 5px #BCBCBC;
 }
 
@@ -47,14 +36,15 @@
     flex-direction: column;
     align-items: center;
 }
-.section3-itens span{ 
+
+.section3-itens span {
     font-size: 1.2rem;
     margin: 0.75rem;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
     .section3-titulo-menor h2 {
-       font-size: 28px;
+        font-size: 28px;
     }
 
     .section3-container ul {
@@ -64,8 +54,7 @@
     }
 
     .section3-itens img {
-        max-width: 100%;
-        width: 30%;
+        width: 20%;
         margin-bottom: 1rem;
     }
 
@@ -79,18 +68,17 @@
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 398px) {
     .section3-titulo-menor h2 {
-        font-size: 1.8rem;
-        width: 80vw;
+        font-size: 28px;
     }
 
     .section3 {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .section3-itens img {
-        width: 45px;
+        width: 35%;
         margin-bottom: 0.5rem;
     }
 
@@ -102,8 +90,8 @@
     }
 
     .section3-container {
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .section3-lista {

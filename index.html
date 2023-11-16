@@ -12,68 +12,27 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="index.html">
-                    < Wallace />
-                </a>
-            </div>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
-            <div class="nav-icones">
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin" style="color: #fcfcfc;"></i></a>
-                <a href="#"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
+    <header class="header">
+        <a href="/" class="logo">< Wallace /></a>
+        <nav class="nav">
+          <button
+            class="btn-menu"
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu<span class="hamburger"></span>
+          </button>
+          
+          <ul class="menu" id="menu" role="menu">
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
-        </div>
-
-    </header>
-<!-- 
-    <main>
-        <button id="inicio" class="scroll-top">
-            <img src="assets/img/setas-para-cima.png" alt="seta ue direciona para baixo">
-        </button>
-    </main> -->
+      </header>
 
     <section class="section1" id="inicio">
         <div class="section1-container">
@@ -85,7 +44,7 @@
                 </p>
                 <h1>Desenvolvedor Front-End</h1>
             </div>
-        
+
             <div class="section1-imagem">
                 <img data-aos="fade-left" data-aos-duration="1500" src="assets/img/undraw_add_information_j2wg.svg"
                     alt="foto principal com o boneco apontando para cima">
@@ -194,82 +153,81 @@
             <h2>Projetos</h2>
         </div>
 
-            <div class="section4-container" data-aos="flip-up" data-aos-duration="1500">
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/projeto numero secreto.png"
-                        alt="imagem do jogo número">
-                    <h3 class="section4-titulo-interno"><span>Jogo número secreto</span>
-                    </h3>
+        <div class="section4-container" data-aos="flip-up" data-aos-duration="1500">
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/projeto numero secreto.png" alt="imagem do jogo número">
+                <h3 class="section4-titulo-interno"><span>Jogo número secreto</span>
+                </h3>
 
-                    <a href="https://github.com/wallacesalviano/JogoNumeroSecreto"> <i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
+                <a href="https://github.com/wallacesalviano/JogoNumeroSecreto"> <i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
 
-                    <a href="https://jogo-numero-secreto-five.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-                </div>
-
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/projeto alurabooks.png" alt="imagem do alura books">
-                    <h3 class="section4-titulo-interno"><span>Alura Books</span>
-                    </h3>
-
-                    <a href="https://github.com/wallacesalviano/alurabooks"> <i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
-
-                    <a href="https://alurabooks-ashen-tau.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-
-                </div>
-
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/projeto relógio digital.png"
-                        alt="imagem do relógio digital">
-                    <h3 class="section4-titulo-interno"><span>Relógio Digital</span>
-                    </h3>
-
-                    <a href="https://relogio-digital-gilt-eight.vercel.app/"><i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
-
-                    <a href="https://aluraplus-azure-phi.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-                </div>
-
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/aluraplus.png" alt="imagem do alura plus">
-                    <h3 class="section4-titulo-interno"><span>Alura Plus</span>
-                    </h3>
-
-                    <a href="https://github.com/wallacesalviano/aluraplus"><i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
-
-                    <a href="https://aluraplus-ijkgcarms-wallacesalviano.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-                </div>
-
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/Norte Sul MND.png" alt="imagem do alura plus">
-                    <h3 class="section4-titulo-interno"><span>Norte Sul</span>
-                    </h3>
-
-                    <a href="https://github.com/wallacesalviano/NorteSul"><i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
-
-                    <a href="https://norte-sul.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-                </div>
-
-                <div class="section4-quadrantes">
-                    <img class="section4-imagem" src="assets/img/FOKUS.png" alt="imagem do alura plus">
-                    <h3 class="section4-titulo-interno"><span>Fokus</span>
-                    </h3>
-
-                    <a href="https://github.com/wallacesalviano/Fokus"><i class="fa-brands fa-github"
-                            style="color: #ffffff;"></i>Code</a>
-
-                    <a href="https://fokus-five-theta.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
-                            style="color: #ffffff;"></i>Deploy</a>
-                </div>
+                <a href="https://jogo-numero-secreto-five.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                        style="color: #ffffff;"></i>Deploy</a>
             </div>
+
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/projeto alurabooks.png" alt="imagem do alura books">
+                <h3 class="section4-titulo-interno"><span>Alura Books</span>
+                </h3>
+
+                <a href="https://github.com/wallacesalviano/alurabooks"> <i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
+
+                <a href="https://alurabooks-ashen-tau.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
+                        style="color: #ffffff;"></i>Deploy</a>
+
+            </div>
+
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/projeto relógio digital.png"
+                    alt="imagem do relógio digital">
+                <h3 class="section4-titulo-interno"><span>Relógio Digital</span>
+                </h3>
+
+                <a href="https://relogio-digital-gilt-eight.vercel.app/"><i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
+
+                <a href="https://aluraplus-azure-phi.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                        style="color: #ffffff;"></i>Deploy</a>
+            </div>
+
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/aluraplus.png" alt="imagem do alura plus">
+                <h3 class="section4-titulo-interno"><span>Alura Plus</span>
+                </h3>
+
+                <a href="https://github.com/wallacesalviano/aluraplus"><i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
+
+                <a href="https://aluraplus-ijkgcarms-wallacesalviano.vercel.app/"><i
+                        class="fa-solid fa-arrow-up-from-bracket" style="color: #ffffff;"></i>Deploy</a>
+            </div>
+
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/Norte Sul MND.png" alt="imagem do alura plus">
+                <h3 class="section4-titulo-interno"><span>Norte Sul</span>
+                </h3>
+
+                <a href="https://github.com/wallacesalviano/NorteSul"><i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
+
+                <a href="https://norte-sul.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"
+                        style="color: #ffffff;"></i>Deploy</a>
+            </div>
+
+            <div class="section4-quadrantes">
+                <img class="section4-imagem" src="assets/img/FOKUS.png" alt="imagem do alura plus">
+                <h3 class="section4-titulo-interno"><span>Fokus</span>
+                </h3>
+
+                <a href="https://github.com/wallacesalviano/Fokus"><i class="fa-brands fa-github"
+                        style="color: #ffffff;"></i>Code</a>
+
+                <a href="https://fokus-five-theta.vercel.app/"> <i class="fa-solid fa-arrow-up-from-bracket"
+                        style="color: #ffffff;"></i>Deploy</a>
+            </div>
+        </div>
 
     </section>
 
@@ -313,13 +271,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <footer class="rodapé">
         <div class="rodapé-container">
             <a href="/index.html">
                 < Wallace />
-            </a>
+            </a>    
             <p>Me acompanhe nas redes</p>
             <div class="rodapé-icones">
                 <a href="https://github.com/wallacesalviano">

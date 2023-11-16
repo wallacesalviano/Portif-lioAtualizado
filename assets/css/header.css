@@ -1,130 +1,274 @@
-header {
-    background-color: var(--azul-fechado);
-    box-shadow: 0px 3px 10px #464646;
-    width: 100vw;
+/* header {
+  background-color: var(--azul-fechado);
+  box-shadow: 0px 3px 10px #464646;
+  width: 100%;
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo a {
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 2rem;
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 2rem;
 }
 
 .logo h1 {
-    color: #fff;
+  color: #fff;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .nav-list ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-item {
-    margin: 0 15px;
-    list-style: none;
+  margin: 0 15px;
+  list-style: none;
 }
 
-.nav-item a{
-    font-size: 0.95rem;
-    padding: 0.5rem;
+.nav-item a {
+  font-size: 0.95rem;
+  padding: 0.5rem;
 }
 
-.nav-item a:hover{
-    background: var(--azul-escuro);
-    border-radius: 0.25rem;
+.nav-item a:hover {
+  background: var(--azul-escuro);
+  border-radius: 0.25rem;
 }
 
-.nav-icones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    gap: 1.5rem;
+.nav-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
 }
 
 .mobile-menu-icon {
-    display: none;
+  display: none;
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
-
 
 @media screen and (max-width: 730px) {
-    header {
-        width: 100%;
-    }
-    
-    .logo a{
-        font-size: 1.5rem;
-    }
+  header {
+    width: 100%;
+  }
 
-    .nav-list{
-        margin: 0;
-    }
-    
-    .nav-icones{
-        display: none;
-    }
+  .logo a {
+    font-size: 1.5rem;
+  }
 
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
+  .nav-list {
+    margin: 0;
+  }
+
+  .nav-icones {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
 }
 
+
+@media screen and (max-width: 430px) {
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 100%;
+    z-index: 1000;
+  }
+
+} */
+
+
+a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--azul-fechado);
+  height: 4.6875rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background: var(--azul-escuro);
+  transition: 0.8s;
+}
+
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--azul-fechado);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--branco);
+    padding: 1rem 0;
+    cursor: pointer;
+    padding: 2rem;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav.active .menu {
+    height: calc(100vh - 28rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--branco);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
